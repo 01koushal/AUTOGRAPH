@@ -361,10 +361,3 @@ LIMIT $limit
 4. Deploy — Vercel auto-detects the Vite build (`npm run build`, output
    `dist/`); `vercel.json` handles SPA routing fallbacks.
 
-## Screenshots
-
-> Replace with real screenshots after running the app locally.
-
-| Home | Car detail | Upgrade explorer |
-|---|---|---|
-| `docs/screenshots/home.png` | `docs/screenshots/car-detail.png` | `docs/screenshots/upgrades.png` |
