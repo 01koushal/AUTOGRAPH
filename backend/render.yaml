@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: autograph-api
+    runtime: python
+    plan: free
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn wsgi:app --bind 0.0.0.0:$PORT
+    envVars:
+      - key: GRAPH_URI
+        sync: false
+      - key: GRAPH_USER
+        sync: false
+      - key: GRAPH_PASSWORD
+        sync: false
+      - key: CORS_ORIGINS
+        sync: false
+      - key: FLASK_ENV
+        value: production
